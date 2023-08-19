@@ -1,0 +1,48 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.page {
+  &__form {
+    margin-bottom: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  &__input {
+    padding: 10px;
+  }
+}
+
+.records {
+	width: 100%;
+	border: 1px solid #ffffff;
+  border-radius: 20px;
+
+  &__head {
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  &__data {
+    padding: 10px;
+
+    &--actions {
+      cursor: pointer;
+    }
+  }
+}
