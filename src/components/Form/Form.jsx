@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Form({ addItemFunc }) {
   const [form, setForm] = useState({
     date: new Date().getFullYear() + '-' + ('0' + (new Date().getMonth() + 1)).slice(-2) + '-' + ('0' + new Date().getDate()).slice(-2),
     distance: ''
   });
-  const [id, setId] = useState(0);
+  const id = useRef(0);
 
   const { date, distance } = form;
   
@@ -19,10 +19,10 @@ export default function Form({ addItemFunc }) {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    setId(id + 1);
+    id.current = id.current + 1;
 
     addItemFunc({
-      id,
+      id: id.current,
       date,
       distance,
     });
