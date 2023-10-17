@@ -1,8 +1,23 @@
-# React + Vite
+# training-records
+### Ссылка на прототип:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://vobiryukov12.github.io/training-records/
 
-Currently, two official plugins are available:
+## Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src='./src/assets/training-records.gif' width='450'>
+
+## Описание
+Мини-приложение на React, которое хранит данные о тренировках и прогулках.
+
+## Возможности приложения:
+- Новые значения добавляются не в конец, а согласно сортировке по дате
+- Если добавляются значения, указывающие на уже существующую дату, то значения суммируются с теми, что хранятся в таблице
+- С помощью иконки ✘ можно удалить строку. Удаляется вся строка целиком и данные, связанные с ней
+
+##### Особенности проекта:
+- Все данные хранятся в localStorage
+- Используется библиотека moment.js
+
+##### Технологии используемые на проекте:
+[![Skills](https://skillicons.dev/icons?i=react,js,scss,vite)](https://skillicons.dev)
